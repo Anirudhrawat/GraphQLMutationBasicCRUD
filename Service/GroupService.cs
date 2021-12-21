@@ -16,7 +16,7 @@ namespace GraphQLMutationBasicCRUD.Service
             {
                 new Group(){ GroupId = 1, Name = "Science", ShortName = "SC"},
                 new Group(){ GroupId = 2, Name = "Commerce", ShortName = "COM"},
-                new Group(){ GroupId = 1, Name = "Arts", ShortName = "AR"},
+                new Group(){ GroupId = 3, Name = "Arts", ShortName = "AR"},
             };
         }
         public IQueryable<Group> GetAll()

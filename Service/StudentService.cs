@@ -16,9 +16,9 @@ namespace GraphQLMutationBasicCRUD.Service
             _students = new List<Student>()
             {
                 new Student() {StudentId = 1, Name = "Anirudh", GroupId =1},
-                new Student() {StudentId = 1, Name = "Arnav", GroupId =2},
-                new Student() {StudentId = 1, Name = "Rohit", GroupId =3},
-                new Student() {StudentId = 1, Name = "Mohit", GroupId =1},
+                new Student() {StudentId = 2, Name = "Arnav", GroupId =2},
+                new Student() {StudentId = 3, Name = "Rohit", GroupId =3},
+                new Student() {StudentId = 4, Name = "Mohit", GroupId =1},
             };
         }
         public Student Create(CreateStudentInput inputStudent)

@@ -14,10 +14,11 @@ namespace GraphQLMutationBasicCRUD.GraphQL
     {
         protected override void Configure(IObjectTypeDescriptor<Group> descriptor)
         {
+            var id = descriptor.Field(x => x.GroupId).Type<IdType>();
             descriptor.Field(x => x.GroupId).Type<IdType>();
             descriptor.Field(x => x.Name).Type<StringType>();
             descriptor.Field(x => x.ShortName).Type<StringType>();
-            descriptor.Field<StudentResolver>(x => x.GetStudents(default,default));
+            descriptor.Field<StudentResolver>(x => x.GetStudents(default, default));
         }
     }
 
